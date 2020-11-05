@@ -9,6 +9,6 @@ This project provides a simply way to implement a scalable machine learning syst
 3. Trained models can be easily re-trained and updated periodically.
 
 ### How it works
-![alt text](https://github.com/matthew-lyr/end_to_end_machine_learning_framework/blob/main/end_to_end_ml_high_level_flowchart.PNG
+![alt text](https://github.com/matthew-lyr/end_to_end_machine_learning_framework/blob/main/End_to_end_ml_high_level_flowchart.PNG
 )
 
