@@ -1,10 +1,10 @@
 # End-to-end Machine Learning Framework on Google Cloud Platform
 
 ### Overview
-This project provides a simply way to implement a scalable machine learning system on Google Cloud Platform that handles on-going data cleaning, model training, model updating, and prediction for large-scale structured data.
+This project provides a simply way to implement a scalable machine learning system that handles on-going data cleaning, model training, model updating, and prediction for large-scale structured data on Google Cloud Platform.
 
 ### Special Features
-1. Able to make large-scale batch predictions for more than hundreds of millions of records. 
+1. Able to make large-scale batch predictions. 
 2. Data cleaning and preparation is simple and straight-forward: use SQL to describe how data needs to be prepared.
 3. Trained models can be easily re-trained and updated periodically.
 
@@ -26,9 +26,9 @@ In essence, what the framework is really doing is to utilize various services pr
 
 Train and deploy the trained model:
 ```
-project_id          = 'yoyoyo-27106'                                               
-service_account_dir = '/srv/secrets/yoyoyo-27106-934d57ded.json'
-sql                 = "SELECT * FROM `yoyoyo-27106.finance.daily_stock_price` "
+project_id          = 'yoyoyo-27106'                                                 # Your GCP Project ID                 
+service_account_dir = '/srv/secrets/yoyoyo-27106-934d57ded.json'                     # The location of your service account key
+sql                 = "SELECT * FROM `yoyoyo-27106.finance.daily_stock_price` "      # Query for getting the training features and labels
 steps               = 1000
 dropout_num         = 0.1
 batch_size          = 10
@@ -52,7 +52,7 @@ credentials   = '/srv/secrets/yoyoyo-27106-934d57ded.json'
 project_id    = 'yoyoyo-27106' 
 dataset_id    = 'finance'
 model_name    = "finance_model"
-bucket        = "gs://yiren-data/test"
+bucket        = "gs://yoyoyo-data/test"
 sql           = "SELECT * FROM (SELECT *except(next_open) FROM `yoyoyo-27106.finance.daily_stock_price` order by date)"
 
 predictor = Auto_predictor(credentials, project_id, dataset_id, model_name, bucket, sql)
