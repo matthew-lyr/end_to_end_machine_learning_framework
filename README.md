@@ -12,9 +12,10 @@ This project provides a simply way to implement a scalable machine learning syst
 ![alt text](https://github.com/matthew-lyr/end_to_end_machine_learning_framework/blob/main/End_to_end_ml_high_level_flowchart.PNG
 )
 There are three main pieces in the framework:
-1. Trainer grabs data from the data source, trains a model, and exports the trained model.
+1. Trainer grabs data from the data source, trains a model with tf.estimator (https://www.tensorflow.org/guide/estimator), and exports the trained model.
 2. Model_manager deploys the trained model or use it to replace a deployed model.
 3. Auto_predictor then uses the deployed model to make batch predictions on the input data specified by users in SQL.
+
 
 In essence, what the framework is really doing is to utilize various services provided by Google Cloud, such as BigQuery, Cloud Storage, and ML Engine/AI Platform. The framework utilizes their strengths and orchestrates them into a connected system. 
 
