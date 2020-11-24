@@ -5,7 +5,7 @@ This project provides a simply way to implement a scalable machine learning syst
 
 ### Special Features
 1. Able to make large-scale batch predictions. 
-2. Data cleaning and preparation is simple and straight-forward: use SQL to describe how data needs to be prepared.
+2. Data preparation is simple and scalable. It enables cleaning/massaging/transforming of petabetes of input data. 
 3. Trained models can be easily re-trained and updated periodically.
 
 ### How it works
@@ -17,7 +17,7 @@ There are three main pieces in the framework:
 3. Auto_predictor then uses the deployed model to make batch predictions on the input data specified by users in SQL.
 
 
-In essence, what the framework is really doing is to utilize various services provided by Google Cloud, such as BigQuery, Cloud Storage, and ML Engine/AI Platform. The framework utilizes their strengths and orchestrates them into a connected system. 
+In essence, the framework utilizes and orchestrates services provided by Google Cloud. 
 
 ![alt text](https://github.com/matthew-lyr/end_to_end_machine_learning_framework/blob/main/End_to_end_ml_detailed_flowchart.PNG
 )
