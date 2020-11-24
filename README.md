@@ -5,7 +5,7 @@ This project provides a simply way to implement a scalable machine learning syst
 
 ### Special Features
 1. Able to make large-scale batch predictions. 
-2. Data preparation is simple and scalable. It enables cleaning/massaging/transforming of petabetes of input data. 
+2. Data preparation is simple and scalable. It enables cleaning/massaging/transforming of petabytes of input data. 
 3. Trained models can be easily re-trained and updated periodically.
 
 ### How it works
