@@ -30,7 +30,7 @@ Train and deploy the trained model:
 project_id          = 'yoyoyo-27106'                                                                     # Your GCP Project ID                 
 service_account_dir = '/srv/secrets/yoyoyo-27106-934d57ded.json'                                         # The location of your service account key
 training_data_sql   = "SELECT * FROM `yoyoyo-27106.finance.daily_stock_price` where date<'2020-01-01'"   # Query for getting the training features and labels
-validation_data_sql = "SELECT * FROM `yoyoyo-27106.finance.daily_stock_price` where date<'2020-01-01'"   # Query for getting the validation features and labels
+validation_data_sql = "SELECT * FROM `yoyoyo-27106.finance.daily_stock_price` where date>='2020-01-01'"   # Query for getting the validation features and labels
 steps               = 1000
 dropout_num         = 0.1
 batch_size          = 10
